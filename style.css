@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, p, .caption {
 
 h1 { 
     font-family: "Aktiv Grotesk", sans-serif; /* Use the correct TypeKit font family */
+    color: #191717;
     font-size: 78px;
     font-weight: 700;
     line-height: 78px;
@@ -15,6 +16,7 @@ h1 {
 
 h2 { 
     font-family: "Aktiv Grotesk";
+    color: #191717;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -23,12 +25,29 @@ h2 {
 
 h3 {
     font-family: "Aktiv Grotesk";
+    color: #191717;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
+h4 {
+    color: rgba(43, 43, 43, 0.70);
+    font-family: "Aktiv Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+p{
+    font-family: "Aktiv Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 nav.column {
     margin: 30% 56px;
     position: flex;

@@ -1,4 +1,4 @@
-body {background: #FBF3E9;;
+body {background: #FBF3E9;
 }
 
 h1, h2, h3, h4, h5, p, .caption {
@@ -89,4 +89,9 @@ nav.column {
 aside{
     display: flex;
     justify-content: right;
+}
+
+.navbar a:hover {
+    background-color: aqua;
+    color:black;
 }

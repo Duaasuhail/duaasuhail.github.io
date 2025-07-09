@@ -48,17 +48,30 @@ p{
     font-weight: 400;
     line-height: normal;
 }
-nav.column {
+.nav-column {
     margin: 30% 56px;
-    position: flex;
-}
-.column {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     max-width: 655px;
     position: fixed;
     gap: 24px;
+
+}
+
+.aside-column {
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right:3%;
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left:3%;
+    gap: 48px; /* Add spacing between projects if needed */
+}
+.column {
+
 }
 
 .thumbnail {
@@ -86,12 +99,6 @@ nav.column {
     line-height: normal;
 }
 
-
-
-aside{
-    display: flex;
-    justify-content: right;
-}
 
 .navbar a:hover {
     background-color: aqua;

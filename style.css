@@ -48,33 +48,44 @@ p{
     font-weight: 400;
     line-height: normal;
 }
-nav.column {
-    margin: 30% 56px;
-    position: flex;
-}
-.column {
+.nav-column {
+    margin: 33% 56px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     max-width: 655px;
     position: fixed;
     gap: 24px;
+
+}
+.div-a {
+    display: grid;
+    gap: 24px;
+}
+.aside-column {
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right:3%;
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left:3%;
+    gap: 56px; /* Add spacing between projects if needed */
 }
 
-.thumbnail {
-    min-width: 655px;
-
+.btn-wrapper {
+  display: grid;
+  gap: 24px;
 }
 
 .btn-group .btn {
-    margin: 0px 16px;
-    display: flex;
+    margin-right: 16px;
+    margin-top: 2px;
+    display: grid;
     min-width: 116px;
-    height: 66px;
     padding: 18px 24px;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
     border-radius: 24px;
     border: 1px solid #191717;
     float: left;
@@ -86,12 +97,19 @@ nav.column {
     line-height: normal;
 }
 
-
-
-aside{
+.btn-group2 .btn2 {
+    margin-right: 16px;
+    margin-top: 2px;
     display: flex;
-    justify-content: right;
+    padding:  12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    border: 1px solid #191717;
+    float: left;
 }
+
 
 .navbar a:hover {
     background-color: aqua;

@@ -49,7 +49,7 @@ p{
     line-height: normal;
 }
 .nav-column {
-    margin: 30% 56px;
+    margin: 33% 56px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -58,7 +58,10 @@ p{
     gap: 24px;
 
 }
-
+.div-a {
+    display: grid;
+    gap: 24px;
+}
 .aside-column {
     float: right;
     width: 50%;
@@ -68,26 +71,21 @@ p{
     padding-top:2%;
     padding-bottom:2%;
     padding-left:3%;
-    gap: 48px; /* Add spacing between projects if needed */
-}
-.column {
-
+    gap: 56px; /* Add spacing between projects if needed */
 }
 
-.thumbnail {
-    min-width: 655px;
-
+.btn-wrapper {
+  display: grid;
+  gap: 24px;
 }
 
 .btn-group .btn {
-    margin: 0px 16px;
-    display: flex;
+    margin-right: 16px;
+    margin-top: 2px;
+    display: grid;
     min-width: 116px;
-    height: 66px;
     padding: 18px 24px;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
     border-radius: 24px;
     border: 1px solid #191717;
     float: left;
@@ -97,6 +95,19 @@ p{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+.btn-group2 .btn2 {
+    margin-right: 16px;
+    margin-top: 2px;
+    display: flex;
+    padding:  12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    border: 1px solid #191717;
+    float: left;
 }
 
 

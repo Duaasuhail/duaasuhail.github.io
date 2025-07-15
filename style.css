@@ -2,6 +2,24 @@ body {background: #FBF3E9;
     display: flex;
 }
 
+body {
+  font-size: 16px;
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
+
 h1, h2, h3, h4, h5, p, .caption {
     margin: 0;
     padding: 0;
@@ -59,7 +77,30 @@ p{
     position: fixed;
 
 }
+@media (min-width: 1024px) {
+  .nav-column {
+    position: fixed;
+    margin: 56px;
+    display: flex;
+    padding-top: 24%;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 655px;
+    position: fixed;
+  }
+}
 
+@media (min-width: 1440px) {
+  .nav-column {
+    margin: 56px;
+    display: flex;
+    padding-top: 28%;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 655px;
+    position: fixed;
+  }
+}
 
 .content {
     display: flex;

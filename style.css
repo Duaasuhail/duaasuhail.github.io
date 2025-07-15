@@ -1,4 +1,5 @@
 body {background: #FBF3E9;
+    display: flex;
 }
 
 h1, h2, h3, h4, h5, p, .caption {
@@ -49,24 +50,23 @@ p{
     line-height: normal;
 }
 .nav-column {
-    margin: 33% 56px;
+    margin: 56px;
     display: flex;
+    padding-top: 28%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     max-width: 655px;
     position: fixed;
-    gap: 24px;
 
 }
-.div-a {
-    display: grid;
-    gap: 24px;
-}
-.aside-column {
+
+
+.content {
+    display: flex;
+    flex-direction: column;
     float: right;
     width: 50%;
-    display: grid;
-
+    margin-left: auto;
     padding-right:3%;
     padding-top:2%;
     padding-bottom:2%;
@@ -74,9 +74,9 @@ p{
     gap: 56px; /* Add spacing between projects if needed */
 }
 
-.btn-wrapper {
+.nav-wrapper {
   display: grid;
-  gap: 24px;
+  gap: 12px;
 }
 
 .btn-group .btn {
@@ -104,7 +104,6 @@ p{
     padding:  12px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     border-radius: 24px;
     border: 1px solid #191717;
     float: left;

@@ -1,24 +1,11 @@
-body {background: #FBF3E9;
-    display: flex;
+html{
+    scroll-behavior: smooth;
 }
 
 body {
   font-size: 16px;
 }
 
-/* Tablets */
-@media (min-width: 768px) {
-  body {
-    font-size: 18px;
-  }
-}
-
-/* Desktops */
-@media (min-width: 1024px) {
-  body {
-    font-size: 20px;
-  }
-}
 
 h1, h2, h3, h4, h5, p, .caption {
     margin: 0;
@@ -70,7 +57,7 @@ p{
 .nav-column {
     margin: 56px;
     display: flex;
-    padding-top: 28%;
+
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
@@ -83,15 +70,9 @@ p{
     position: fixed;
     bottom: 0;              
     left: 0;   
-    margin: 56px;
-    display: flex;
-    padding-top: 24%;
-    flex-direction: column;
-    align-items: flex-end;
-    max-width: 655px;
+
   }
 }
-
 
 
 .content {

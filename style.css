@@ -3,7 +3,8 @@ html{
 }
 
 body {
-  font-size: 16px;
+    font-size: 16px;
+    background-color: #1A1815;
 }
 
 
@@ -13,8 +14,8 @@ h1, h2, h3, h4, h5, p, .caption {
 }
 
 h1 { 
-    font-family: "Aktiv Grotesk", sans-serif; /* Use the correct TypeKit font family */
-    color: #191717;
+    font-family: "Aktiv Grotesk", sans-serif; 
+    color: #FAECDC;
     font-size: 78px;
     font-weight: 700;
     line-height: 78px;
@@ -22,7 +23,7 @@ h1 {
 
 h2 { 
     font-family: "Aktiv Grotesk";
-    color: #191717;
+    color: #FAECDC;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -31,7 +32,7 @@ h2 {
 
 h3 {
     font-family: "Aktiv Grotesk";
-    color: #191717;
+    color: #FAECDC;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -39,7 +40,7 @@ h3 {
 }
 
 h4 {
-    color: rgba(43, 43, 43, 0.70);
+    color: #B7ACA0;
     font-family: "Aktiv Grotesk";
     font-size: 16px;
     font-style: normal;
@@ -52,6 +53,7 @@ p{
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+    color: #FAECDC;
     line-height: normal;
 }
 .nav-column {
@@ -66,12 +68,12 @@ p{
 }
 
 @media (min-width: 1024px) {
-  .nav-column {
+.nav-column {
     position: fixed;
     bottom: 0;              
     left: 0;   
 
-  }
+}
 }
 
 
@@ -85,12 +87,12 @@ p{
     padding-top:2%;
     padding-bottom:2%;
     padding-left:3%;
-    gap: 56px; /* Add spacing between projects if needed */
+    gap: 56px; 
 }
 
 .nav-wrapper {
-  display: grid;
-  gap: 12px;
+    display: grid;
+    gap: 12px;
 }
 
 .btn-group .btn {
@@ -101,7 +103,8 @@ p{
     padding: 18px 24px;
     justify-content: center;
     border-radius: 24px;
-    border: 1px solid #191717;
+    border: 1px solid #FAECDC;
+    color: #FAECDC;
     float: left;
     /* h3 */
     font-family: "Aktiv Grotesk";
@@ -120,7 +123,8 @@ p{
     justify-content: center;
     align-items: center;
     border-radius: 24px;
-    border: 1px solid #191717;
+    border: 1px solid #FAECDC;
+    color: #FAECDC;
     float: left;
 }
 

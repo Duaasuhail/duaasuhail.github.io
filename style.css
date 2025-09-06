@@ -117,9 +117,9 @@ p {
     margin-right: 16px;
     display: grid;
     min-width: 116px;
-    padding: 18px 24px;
+    padding: 18px 15px;
     justify-content: center;
-    border-radius: 24px;
+    border-radius: 20px;
     border: 1px solid #FAECDC;
     color: #FAECDC; /* added from main */
     float: left;
@@ -134,10 +134,10 @@ p {
 .btn-group2 .btn2 {
     margin-right: 16px;
     display: flex;
-    padding: 12px;
+    padding: 15px;
     justify-content: center;
     align-items: center;
-    border-radius: 24px;
+    border-radius: 18px;
     border: 1px solid #FAECDC;
     color: #FAECDC; /* added from main */
     float: left;

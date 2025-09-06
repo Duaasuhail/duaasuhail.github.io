@@ -1,12 +1,11 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
 body {
-  font-size: 16px;
-  background-color: #191717;
+    font-size: 16px;
+    background-color: #191717; /* kept test2, slightly darker */
 }
-
 
 h1, h2, h3, h4, h5, p, .caption {
     margin: 0;
@@ -14,9 +13,9 @@ h1, h2, h3, h4, h5, p, .caption {
 }
 
 h1 { 
-    font-family: "Aktiv Grotesk", sans-serif; /* Use the correct TypeKit font family */
+    font-family: "Aktiv Grotesk", sans-serif;
     color: #FAECDC;
-    font-size: 64px;
+    font-size: 64px; /* kept test2 size (main had 78px, but felt oversized) */
     font-weight: 700;
     line-height: 78px;
 }
@@ -24,7 +23,7 @@ h1 {
 h2 { 
     font-family: "Aktiv Grotesk";
     color: #FAECDC;
-    font-size: 28px;
+    font-size: 28px; /* kept test2, main was 32px */
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -33,14 +32,14 @@ h2 {
 h3 {
     font-family: "Aktiv Grotesk";
     color: #FAECDC;
-    font-size: 20px;
+    font-size: 20px; /* kept test2, main was 24px */
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
 h4 {
-    color: #FAECDC;
+    color: #FAECDC; /* kept test2, main had #B7ACA0 */
     font-family: "Aktiv Grotesk";
     opacity: 55%;
     font-size: 16px;
@@ -49,15 +48,14 @@ h4 {
     line-height: normal;
 }
 
-p{
+p {
     font-family: "Aktiv Grotesk";
     font-size: 16px;
-    color: #FAECDC;
     font-style: normal;
     font-weight: 400;
+    color: #FAECDC;
     line-height: normal;
 }
-
 
 /* Home */
 
@@ -67,23 +65,26 @@ p{
     float: right;
     width: 50%;
     margin-left: auto;
-    padding-right:3%;
-    padding-top:2%;
-    padding-bottom:2%;
-    padding-left:3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
     gap: 56px; 
 }
-.text-content{
-    display:grid;
+
+.text-content {
+    display: grid;
     padding-top: 2%; 
     gap: 4px;
 }
-.text-content-2{
+
+.text-content-2 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
 }
+
 .nav-column {
     margin: 56px;
     display: flex;
@@ -91,25 +92,25 @@ p{
     align-items: flex-end;
     justify-content: space-between;
     max-width: 655px;
-    position:static;
+    position: static;
 }
 
 @media (min-width: 1024px) {
-  .nav-column {
-    position: fixed;
-    bottom: 0;              
-    left: 0;   
-
-  }
+    .nav-column {
+        position: fixed;
+        bottom: 0;              
+        left: 0;   
+    }
 }
 
 .nav-wrapper {
-  display: grid;
-  gap: 16px;
+    display: grid;
+    gap: 16px; /* kept test2 (main had 12px, but this gives more breathing room) */
 }
+
 .nav-wrapper-2 {
-  display: grid;
-  gap: 32px;
+    display: grid;
+    gap: 32px;
 }
 
 .btn-group .btn {
@@ -120,26 +121,25 @@ p{
     justify-content: center;
     border-radius: 24px;
     border: 1px solid #FAECDC;
+    color: #FAECDC; /* added from main */
     float: left;
 
-    /* h3 */
     font-family: "Aktiv Grotesk";
     font-size: 20px;
     font-style: normal;
-    color: #FAECDC;
     font-weight: 500;
     line-height: normal;
-
 }
 
 .btn-group2 .btn2 {
     margin-right: 16px;
     display: flex;
-    padding:  12px;
+    padding: 12px;
     justify-content: center;
     align-items: center;
     border-radius: 24px;
     border: 1px solid #FAECDC;
+    color: #FAECDC; /* added from main */
     float: left;
 }
 
@@ -151,5 +151,5 @@ p{
 
 .navbar a:hover {
     background-color: aqua;
-    color:black;
+    color: black;
 }

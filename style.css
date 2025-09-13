@@ -4,7 +4,7 @@ html {
 
 body {
     font-size: 16px;
-    background-color: #191717; /* kept test2, slightly darker */
+    background-color: #191717; 
 }
 
 h1, h2, h3, h4, h5, p, .caption {
@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, p, .caption {
 h1 { 
     font-family: "Aktiv Grotesk", sans-serif;
     color: #FAECDC;
-    font-size: 64px; /* kept test2 size (main had 78px, but felt oversized) */
+    font-size: 64px; 
     font-weight: 700;
     line-height: 78px;
 }
@@ -23,7 +23,7 @@ h1 {
 h2 { 
     font-family: "Aktiv Grotesk";
     color: #FAECDC;
-    font-size: 28px; /* kept test2, main was 32px */
+    font-size: 28px; 
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -32,14 +32,14 @@ h2 {
 h3 {
     font-family: "Aktiv Grotesk";
     color: #FAECDC;
-    font-size: 20px; /* kept test2, main was 24px */
+    font-size: 20px; 
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
 h4 {
-    color: #FAECDC; /* kept test2, main had #B7ACA0 */
+    color: #FAECDC;
     font-family: "Aktiv Grotesk";
     opacity: 55%;
     font-size: 16px;
@@ -56,7 +56,13 @@ p {
     color: #FAECDC;
     line-height: normal;
 }
-
+@media (hover: hover) {
+  p a:link, h3 a:link, h2 > a, li a:link {
+    text-decoration-color: #E63223;
+    color: #E63223;
+    transition: text-decoration-color 100ms ease-in-out;
+  }
+}
 /* Home */
 
 .content {
@@ -95,17 +101,17 @@ p {
     position: static;
 }
 
-@media (min-width: 1024px) {
+/* Use hover capability as a proxy for desktop */
+@media (hover: hover) and (pointer: fine) {
     .nav-column {
         position: fixed;
         bottom: 0;              
         left: 0;   
     }
 }
-
 .nav-wrapper {
     display: grid;
-    gap: 16px; /* kept test2 (main had 12px, but this gives more breathing room) */
+    gap: 16px; /
 }
 
 .nav-wrapper-2 {
@@ -121,14 +127,7 @@ p {
     justify-content: center;
     border-radius: 20px;
     border: 1px solid #FAECDC;
-    color: #FAECDC; /* added from main */
     float: left;
-
-    font-family: "Aktiv Grotesk";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
 }
 
 .btn-group2 .btn2 {
@@ -139,7 +138,6 @@ p {
     align-items: center;
     border-radius: 18px;
     border: 1px solid #FAECDC;
-    color: #FAECDC; /* added from main */
     float: left;
 }
 

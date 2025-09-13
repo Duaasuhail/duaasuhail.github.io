@@ -138,19 +138,20 @@ p {
         display: flex;
         flex-wrap: wrap;
         justify-content: left;
-        gap: 8px;
+        gap: 4px;
     }
 
     .btn-group .btn {
         margin-right: 0;
-        margin-bottom: 8px;
+        margin-bottom: 4px;
+        padding: 12px;
         float: none;
     }
 
     .btn-group2 {
         display: flex;
         justify-content: left;
-        gap: 8px;
+        gap: 4px;
     }
 
     .btn-group2 .btn2 {
@@ -159,7 +160,7 @@ p {
     }
 }
 
-/* Tablet Layout */
+/* ipad Layout */
 @media (min-width: 768px) and (max-width: 1023px) {
     .content {
         display: flex;
@@ -173,6 +174,7 @@ p {
     .nav-column {
         margin: 40px;
         position: static;
+        justify-content: left;
         max-width: 500px;
     }
 }

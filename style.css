@@ -107,7 +107,7 @@ p {
         margin: 20px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         max-width: 100%;
         order: 1;
     }
@@ -121,23 +121,23 @@ p {
         order: 2;
     }
 
-    /* Adjust typography for mobile */
+    /*  type for mobile */
     h1 {
         font-size: 40px;
         line-height: 48px;
-        text-align: center;
+        text-align: left;
     }
 
     h2 {
         font-size: 20px;
-        text-align: center;
+        text-align: left;
     }
 
-    /* Make navigation buttons stack vertically on very small screens */
+    /* Make navigation buttons stack vertically on small screens */
     .btn-group {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: left;
         gap: 8px;
     }
 
@@ -149,7 +149,7 @@ p {
 
     .btn-group2 {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         gap: 8px;
     }
 

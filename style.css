@@ -144,7 +144,7 @@ p {
     .btn-group .btn {
         margin-right: 0;
         margin-bottom: 4px;
-        padding: 18px 10px;
+        padding: 0px;
         float: none;
     }
 
@@ -180,7 +180,7 @@ p {
         .btn-group .btn {
         margin-right: 0;
         margin-bottom: 4px;
-        padding: 18px 10px;
+        padding: 0px;
         float: none;
     }
 }

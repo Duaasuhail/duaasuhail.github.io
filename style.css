@@ -5,6 +5,8 @@ html {
 body {
     font-size: 16px;
     background-color: #191717; 
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, p, .caption {
@@ -56,6 +58,7 @@ p {
     color: #FAECDC;
     line-height: normal;
 }
+
 @media (hover: hover) {
   p a:link, h3 a:link, h2 > a, li a:link {
     text-decoration-color: #E63223;
@@ -63,19 +66,115 @@ p {
     transition: text-decoration-color 100ms ease-in-out;
   }
 }
-/* Home */
 
-.content {
-    display: flex;
-    flex-direction: column;
-    float: right;
-    width: 50%;
-    margin-left: auto;
-    padding-right: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 3%;
-    gap: 56px; 
+/* Desktop Layout */
+@media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        float: right;
+        width: 50%;
+        margin-left: auto;
+        padding-right: 3%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 3%;
+        gap: 56px; 
+    }
+
+    .nav-column {
+        position: fixed;
+        bottom: 0;              
+        left: 0;   
+        margin: 56px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        max-width: 655px;
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 767px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-column {
+        position: relative;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        order: 1;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        gap: 40px;
+        order: 2;
+    }
+
+    /* Adjust typography for mobile */
+    h1 {
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* Make navigation buttons stack vertically on very small screens */
+    .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .btn-group .btn {
+        margin-right: 0;
+        margin-bottom: 8px;
+        float: none;
+    }
+
+    .btn-group2 {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .btn-group2 .btn2 {
+        margin-right: 0;
+        float: none;
+    }
+}
+
+/* Tablet Layout */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-left: auto;
+        padding: 3%;
+        gap: 48px;
+    }
+
+    .nav-column {
+        margin: 40px;
+        position: static;
+        max-width: 500px;
+    }
 }
 
 .text-content {
@@ -91,27 +190,9 @@ p {
     align-self: stretch;
 }
 
-.nav-column {
-    margin: 56px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-    max-width: 655px;
-    position: static;
-}
-
-/* Use hover capability as a proxy for desktop */
-@media (hover: hover) and (pointer: fine) {
-    .nav-column {
-        position: fixed;
-        bottom: 0;              
-        left: 0;   
-    }
-}
 .nav-wrapper {
     display: grid;
-    gap: 16px; /
+    gap: 16px;
 }
 
 .nav-wrapper-2 {
@@ -128,6 +209,7 @@ p {
     border-radius: 20px;
     border: 1px solid #FAECDC;
     float: left;
+    text-decoration: none;
 }
 
 .btn-group2 .btn2 {
@@ -150,4 +232,11 @@ p {
 .navbar a:hover {
     background-color: aqua;
     color: black;
+}
+
+/* Make images responsive */
+.content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }

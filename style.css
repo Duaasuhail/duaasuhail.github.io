@@ -144,7 +144,7 @@ p {
     .btn-group .btn {
         margin-right: 0;
         margin-bottom: 4px;
-        padding: 12px;
+        padding: 18px 10px;
         float: none;
     }
 
@@ -176,6 +176,12 @@ p {
         position: static;
         justify-content: left;
         max-width: 500px;
+    }
+        .btn-group .btn {
+        margin-right: 0;
+        margin-bottom: 4px;
+        padding: 18px 10px;
+        float: none;
     }
 }
 

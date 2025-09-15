@@ -26,7 +26,6 @@ h2 {
     font-family: "Aktiv Grotesk";
     color: #FAECDC;
     font-size: 28px; 
-    font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
@@ -35,7 +34,7 @@ h3 {
     font-family: "Aktiv Grotesk";
     color: #FAECDC;
     font-size: 20px; 
-    font-style: normal;
+
     font-weight: 500;
     line-height: normal;
 }
@@ -45,7 +44,6 @@ h4 {
     font-family: "Aktiv Grotesk";
     opacity: 55%;
     font-size: 16px;
-    font-style: normal;
     font-weight: 600;
     line-height: normal;
 }

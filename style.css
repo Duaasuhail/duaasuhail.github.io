@@ -17,35 +17,50 @@ h1, h2, h3, h4, h5, p, .caption {
 h1 { 
     font-family: "Aktiv Grotesk", sans-serif;
     color: #FAECDC;
-    font-size: 52px; 
+    font-size: 52px;
+    font-style: normal;
     font-weight: 700;
-    line-height: 78px;
+    line-height: 100%; 
 }
 
 h2 { 
     font-family: "Aktiv Grotesk";
-    color: #FAECDC;
     font-size: 28px; 
     font-weight: 500;
     line-height: normal;
 }
+h2.r{
+    color:#F03737
+}
+
+h2.w{
+    color:#FAECDC
+}
+
 
 h3 {
     font-family: "Aktiv Grotesk";
     color: #FAECDC;
     font-size: 20px; 
-
     font-weight: 500;
     line-height: normal;
+}
+
+h3.r{
+    color:#F03737
 }
 
 h4 {
     color: #FAECDC;
     font-family: "Aktiv Grotesk";
-    opacity: 55%;
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
+}
+
+h4.caption{
+    color: #FAECDC; 
+    opacity: 55%;
 }
 
 p {
@@ -65,7 +80,7 @@ p {
   }
 }
 
-/* Desktop Layout */
+/* Desktop */
 @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
     .content {
         display: flex;
@@ -93,7 +108,7 @@ p {
     }
 }
 
-/* Mobile Layout */
+/* Mobile */
 @media (max-width: 767px) {
     body {
         display: flex;
@@ -119,7 +134,6 @@ p {
         order: 2;
     }
 
-    /*  type for mobile */
     h1 {
         font-size: 40px;
         line-height: 48px;
@@ -131,18 +145,11 @@ p {
         text-align: left;
     }
 
-    /* Make navigation buttons stack vertically on small screens */
-    .btn-group {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: left;
-        gap: 4px;
-    }
-
+    
     .btn-group .btn {
         margin-right: 0;
         margin-bottom: 4px;
-        padding: 18px 10px;
+        padding: 12px 8px;
         float: none;
     }
 
@@ -206,16 +213,33 @@ p {
     gap: 32px;
 }
 
-.btn-group .btn {
-    margin-right: 16px;
+.nav {
+    position: sticky;
+    top: 1em;  
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+}
+.btn {
     display: grid;
     min-width: 116px;
-    padding: 18px 15px;
+    padding: 20px 24px;
+    background-color: #191717;
     justify-content: center;
     border-radius: 20px;
     border: 1px solid #FAECDC;
+}
+
+.btn-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
     float: left;
-    text-decoration: none;
+
+}
+
+.btn:hover {
+    border-color: #F03737;
+    background: rgb(31, 6, 6);
 }
 
 .btn-group2 .btn2 {
@@ -229,16 +253,14 @@ p {
     float: left;
 }
 
-.nav {
-    display: flex; 
-    flex-direction: column; 
-    gap: 28px;
+.h4-lists { 
+    color: #FAECDC;
+    font-family: "Aktiv Grotesk";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
 }
 
-.navbar a:hover {
-    background-color: aqua;
-    color: black;
-}
 
 /* Make images responsive */
 .content img {
@@ -246,3 +268,4 @@ p {
     height: auto;
     display: block;
 }
+

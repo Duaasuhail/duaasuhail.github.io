@@ -1,0 +1,64 @@
+
+.overview{
+    display:grid; 
+    gap: 2.125em;
+    justify-items: start;
+    grid-template-columns: 76.05em auto;
+    margin-top: 2em;
+    margin-bottom: 15.1875em;
+}
+
+.ow1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    align-items: center;
+}
+.ow2{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+flex-shrink: 0;
+}
+.project {
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    margin-top: 1em
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.project-info{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.margin{
+    margin-top: 1em;
+}
+
+.twelve-space{
+    gap: 0.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Project-nav{
+    position: sticky;
+    top: 1em;  
+}
+
+.current-problem{
+    display:grid; 
+    gap: 2.375em;
+    justify-items: start;
+    grid-template-columns: 50% 25%;
+    margin-top: 1.5em;
+}

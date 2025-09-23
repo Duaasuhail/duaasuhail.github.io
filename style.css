@@ -269,3 +269,16 @@ p {
     display: block;
 }
 
+.image-button{
+    display: inline-block;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.image-button:hover {
+    opacity: 0.8;
+}
+
+.image-button img {
+    display: block;
+    max-width: 100%;
+}

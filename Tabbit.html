@@ -2,12 +2,13 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title> Tabbit </title>
+  <title> Tabbit Case Study </title>
   <!-- Designed and Coded by yours truly -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
-    <link href="project.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+  <link href="project.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="font/stylesheet.css">
 <!-- Script-->
   <script>
         function updateProgressBar() {
@@ -19,7 +20,6 @@
             progressBar.style.width = scrollPercent + '%';
         }
 
-        // Throttle scroll events for better performance
         let ticking = false;
         
         function onScroll() {
@@ -36,13 +36,13 @@
         window.addEventListener('scroll', onScroll);
         window.addEventListener('scroll', resetTicking);
         
-        // Initialize progress bar
         updateProgressBar();
     </script>
 </head>
 
 <body>
   <main>
+<!--Progress Bar -->
     <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
     </div>
@@ -54,8 +54,9 @@
         <a href="About.html" class="btn"><h3>About</h3></a>
         </div>
       </nav>
-      <section class="project">
-        <div>
+<!-- Project Overview -->
+<section class="project">
+        <div class="container">
           <img src="Images-Tabbit/Tabbit Cover.gif" alt="Mockup 1">
         </div>
         <div class="ow1">
@@ -111,25 +112,60 @@
       </div>
       </div>
       </section>
-<!-- Problem  -->
-      <div>
-      <h3 class="r"> <b> Current Problem</b></h3>
-      <h1 class="r">  Not enough creativity and too much logistics.</h1>
-      </div>
-      <div class="current-problem">
-      <div>
-      <p> Being surrounded by creatives looking to sell their work  (including myself). By starting at markets and occasionally moving their business to a website, which is not as common. Due to how complicated it is to run an online business and a business in general. Compared to vending, where you have to mass-produce once every few months, and you sell it all at once.</p>
-      <br><p><b> The commitment to running a business can be daunting, on top of the numerous factors to consider:</b></p>
-      </div>
-      <div>
-        <img src="Images-Tabbit/Duaa Vasa.png">
-        <h4 class="caption"> Me at a market! Where I got to meet so many creatives."</h4>
-      </div>
-
+<!-- Project Content-->
+<section class="project-content">
+  <div>
+  <div>
+    <h3 class="r"> Current Problem </h3>
+    <h1>Not enough creativity and too much logistics.</h1>
+  </div>
+  <!-- Content-->
+  <div class="project-content">
+    <div>
+      <p>Being surrounded by creatives looking to sell their work  (including myself). By starting at markets and occasionally moving their business to a website, which is not as common. Due to how complicated it is to run an online business and a business in general. Compared to vending, where you have to mass-produce once every few months, and you sell it all at once.</p>
+      <p><b><br>The commitment to running a business can be daunting, on top of the numerous factors to consider:</b></p><br>
+      <ul>
+        <li><p>whether the business is profitable</p></li>
+        <li><p>inventory management</p></li>
+        <li><p>business growth</p></li>
+        <li><p>lack of benefits (if gone full time)</p></li>
+        <li><p>book keeping</p></li>
+        <li><p>taxes</p></li>
+        <li><p>customer information</p></li>
+        <li><p>marketing and social media</p></li>
+        <li><p>shipping logistics</p></li>
+        <li><p>time management</p></li>
+        <li><p>price management</p></li>
+        <li><p>product creation (the extensive effort that goes into creative products)</p></li>
+        </ul>
+      <br><p>That’s only to name a few factors.</p>
     </div>
-    </section>
-
-  </main>
+    <div class="image-caption">
+      <img src="Images-Tabbit/Duaa Vasa.png" alt="Duaa Vasa">
+      <h4 class="caption"> Me selling my goods at an art market!</h4>
+    </div>
+  </div>
+  </div>
+<!--Side Bar-->
+<aside class="sidebar">
+    <div class="sidebar-content">
+        <h4><a href="#step1">Overview</a></h4>
+        <h4><a href="#step2">Current Problem</a></h4>
+        <h4><a href="#step3">Problem Statement</a></h4>
+        <h4><a href="#step4">Goals</a></h4>
+        <h4><a href="#step5">Background</a></h4>
+        <h4><a href="#step6">User Research</a></h4>
+        <h4><a href="#step7">Competitive Analysis</a></h4>
+        <h4><a href="#step8">Information Architecture</a></h4>
+        <h4><a href="#step9">Wireframes</a></h4>
+        <h4><a href="#step10">Design</a></h4>
+        <h4><a href="#step11">Solution</a></h4>
+        <h4><a href="#step12">Reflections</a></h4>
+    </div>
+</aside>
+</section>
+</section>
+</main>
 </body>
 </html>
 

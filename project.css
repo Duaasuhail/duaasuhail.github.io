@@ -1,31 +1,32 @@
+.container {
+    max-width: 100vw;
+    padding: 0rem 2rem
+}
 
 .overview{
     display:grid; 
     gap: 2.125em;
     justify-items: start;
-    grid-template-columns: 76.05em auto;
+    grid-template-columns: 1fr auto;
     margin-top: 2em;
     margin-bottom: 15.1875em;
+    max-width: 100%; 
 }
 
 .ow1 {
     display: flex;
     justify-content: space-between;
     margin-top: 2em;
-    align-items: center;
+    align-items: flex-start;
 }
 .ow2{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: flex-start;
-flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
 }
-.project {
-    margin-left: 3.5em;
-    margin-right: 3.5em;
-    margin-top: 1em
-}
+
 
 .info{
     display: flex;
@@ -36,7 +37,9 @@ flex-shrink: 0;
 .project-info{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: auto;
+    align-items:stretch;
+    gap: 32px;
 }
 
 .margin{
@@ -50,15 +53,44 @@ flex-shrink: 0;
     align-items: flex-start;
 }
 
+.project {
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    margin-top: 1em
+}
+
 .Project-nav{
     position: sticky;
     top: 1em;  
 }
 
-.current-problem{
-    display:grid; 
-    gap: 2.375em;
-    justify-items: start;
-    grid-template-columns: 50% 25%;
-    margin-top: 1.5em;
+
+.project-content{
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    gap: 2rem; 
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.sidebar {
+    position: sticky;
+    top: 20px; /* Try a value other than 0 */
+    z-index: 10;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    height: fit-content; /* Add this */
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 29px;
+}
+
+.image-caption{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
 }

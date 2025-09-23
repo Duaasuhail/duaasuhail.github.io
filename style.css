@@ -63,6 +63,16 @@ h4.caption{
     opacity: 55%;
 }
 
+.h4-lists { 
+    color: #FAECDC;
+    font-family: "Aktiv Grotesk";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
 p {
     font-family: "Aktiv Grotesk";
     font-size: 16px;
@@ -251,14 +261,6 @@ p {
     border-radius: 18px;
     border: 1px solid #FAECDC;
     float: left;
-}
-
-.h4-lists { 
-    color: #FAECDC;
-    font-family: "Aktiv Grotesk";
-    font-size: 16px;
-    font-weight: 600;
-    line-height: normal;
 }
 
 

@@ -262,7 +262,10 @@ p {
     border: 1px solid #FAECDC;
     float: left;
 }
-
+.btn2:hover {
+    border-color: #F03737;
+    background: rgb(31, 6, 6);
+}
 
 /* Make images responsive */
 .content img {
@@ -284,6 +287,8 @@ p {
     display: block;
     max-width: 100%;
 }
+
+
 .progress-container {
     position: fixed;
     top: 0;

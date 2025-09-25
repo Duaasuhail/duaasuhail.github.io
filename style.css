@@ -244,6 +244,7 @@ p {
     gap: 12px;
     flex-wrap: wrap;
     float: left;
+    margin-top: 16px
 
 }
 
@@ -305,5 +306,7 @@ p {
     width: 0%;
     transition: width 0.1s ease-out;
     transform-origin: 0%;
+
+
 }
 

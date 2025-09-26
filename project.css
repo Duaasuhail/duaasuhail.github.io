@@ -125,3 +125,19 @@ margin-bottom: 300px;
     min-width: 0; 
 }
 
+.text-only{
+    margin-top: 308px;
+    display: flex;
+    gap: 12px; 
+    flex-direction: column;
+
+}
+
+.text-only-list{
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    margin-bottom: 10vh;
+
+}

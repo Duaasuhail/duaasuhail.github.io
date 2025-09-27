@@ -76,11 +76,11 @@
 
 .sidebar {
     position: sticky;
-    top: 20px; /* Try a value other than 0 */
+    top: 20px; 
     z-index: 10;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    height: fit-content; /* Add this */
+    height: fit-content;
 }
 
 .sidebar-content {
@@ -140,4 +140,11 @@ margin-bottom: 300px;
     gap:24px;
     margin-bottom: 10vh;
 
+}
+.section{
+    margin-top: 10vh;
+    display: flex;
+    gap: 12px; 
+    flex-direction: column;
+    margin-bottom: 10vh;
 }

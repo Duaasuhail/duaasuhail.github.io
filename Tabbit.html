@@ -37,43 +37,44 @@
         window.addEventListener('scroll', resetTicking);
         
         updateProgressBar();
-    </script>
+  </script>
 </head>
 
 <body>
+<!-- Navigation -->
+  <nav class="nav">
+    <div class="btn-group">
+      <a href="./" class="btn"><h3>Home</h3></a>
+      <a href="wip.html" class="btn"><h3>Play</h3></a>
+      <a href="About.html" class="btn"><h3>About</h3></a>
+    </div>
+  </nav>
   <main>
 <!--Progress Bar -->
-    <div class="progress-container">
+  <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
-    </div>
-<!-- Navigation -->
-      <nav class="nav">
-        <div class="btn-group">
-        <a href="./" class="btn"><h3>Home</h3></a>
-        <a href="wip.html" class="btn"><h3>Play</h3></a>
-        <a href="About.html" class="btn"><h3>About</h3></a>
-        </div>
-      </nav>
-<!-- Project Overview -->
+  </div>
+<!-- The actual case study  -->
+<!-- Overview -->
 <section class="project">
-        <div class="container">
-          <img src="Images-Tabbit/Tabbit Cover.gif" alt="Mockup 1">
-        </div>
-        <div>
+  <figure>
+    <img src="Images-Tabbit/Tabbit Cover.gif" alt="Mockup 1">
+    <figcaption class="image-caption">
         <h1> Tabbit </h1>
         <h2 class="w"> Taking the busy out of business.</h2>
-        </div>
-        <div class="margin">
-          <h3 class="r"> <b> Overview</b> </h3>
-        </div>
-      <section class="overview">
-        <div class="ow2">
-          <h1> Tabbit is an all-in-one management app designed for small business owners. It streamlines day-to-day tasks that often feel overwhelming and mundane, reducing time spent on administration. Tabbit allows users to reclaim their creativity and focus, resulting in greater business efficiency and less stress.</h1>
-          <div class="twelve-space">
+    </figcaption>
+  </figure>
+  <header class="margin">
+    <h3 class="r"> <b> Overview</b> </h3>
+  </header>
+  <header class="overview">
+    <div class="ow2">
+      <h1> Tabbit is an all-in-one management app designed for small business owners. It streamlines day-to-day tasks that often feel overwhelming and mundane, reducing time spent on administration. Tabbit allows users to reclaim their creativity and focus, resulting in greater business efficiency and less stress.</h1>
+      <div class="twelve-space">
           <h3> Short on Time? </h3>
           <a class="btn"><h3>Jump to Final Product</h3></a>
-          </div>
-        </div>
+      </div>
+    </div>
 <!-- Project Info -->
       <div class="project-info">
       <div class="info">
@@ -111,7 +112,7 @@
         <a href="https://gabrielparagas.framer.website/" target="_blank" ><h4><u>1 Brand Designer</u></h4>  </a>
       </div>
       </div>
-      </section>
+  </header>
 <!-- Project Content-->
 <section class="project-content">
 <section>
@@ -119,9 +120,8 @@
       <h3 class="r"> Current Problem </h3>
       <h1>Not enough creativity and too much logistics.</h1>
     </div>
-  <!-- Content-->
-<!-- The Problem -->
-    <div class="project-content">
+<!-- Current Problem -->
+    <section class="project-content">
       <div>
         <p>Being surrounded by creatives looking to sell their work  (including myself). By starting at markets and occasionally moving their business to a website, which is not as common. Due to how complicated it is to run an online business and a business in general. Compared to vending, where you have to mass-produce once every few months, and you sell it all at once.</p>
         <p><b><br>The commitment to running a business can be daunting, on top of the numerous factors to consider:</b></p><br>
@@ -145,18 +145,15 @@
         <img src="Images-Tabbit/Duaa Vasa.png" alt="Duaa Vasa">
         <h4 class="caption"> Me selling my goods at an art market!</h4>
       </div>
-    </div>
+    </section>
 <!-- Problem Statement -->
-    <div>
-      <div class=" center-text">
-          <img src="Images-Tabbit/Line.svg" alt="Blocker">
-      <h3 class="r"> Problem Statement </h3>
+    <header class=" center-text">
+        <img src="Images-Tabbit/Line.svg" alt="Blocker">
+    <h3 class="r"> Problem Statement </h3>
       <h1> How might we create a simplistic but intuitive business manager for creatives? That helps artists understand the logistical side of their business.</h1>
-    </div>
-
-    </div>
+    </header>
 <!--Goals-->
-    <div>
+    <section>
       <h3 class="r"> Goals </h3>
       <div class="goals-grid">
         <div class="goals">
@@ -172,9 +169,9 @@
           <h2 class="w">Allow creatives to focus on their craft!</h2>
         </div>
       </div>
-    </div>
+    </section>
 <!-- User Research/Background Research-->
-    <div class="text-only">
+    <section class="text-only">
         <h4 class="caption">Research Phase</h4>
         <h3 class="r"> Background </h3>
         <h1>I interviewed 5 young, creative small business owners.</h1>
@@ -197,50 +194,116 @@
                 <li><p>&bull; <b> 100% work on the business alone. </b></p> </li>
             </ul>
         </div>
-    </div>
+    </section>
 <!-- Pain Points-->
-    <div class="container">
+    <section class="container">
       <img src="Images-Tabbit/Painpoints.svg" alt="pain points">
-    </div>
+    </section>
 <!-- User Personas -->
-    <div class="text-only">
+    <section class="text-only">
       <h3 class="r"> User Research </h3>
       <h1> Meet our business owners. </h1>
-      <p> Based on tailoring demographics, user interviews, and online. I created one user persona to empathize with and focus on.  I noticed the trend of lacking time and information among University students, whether that be through interviews or videos I watched of small business creators.
-      </p>
-    </div>
-<!-- Add Carousel for Personas -->
-    <div class="text-only">
+      <p> Based on tailoring demographics, user interviews, and online. I created one user persona to empathize with and focus on.  I noticed the trend of lacking time and information among University students, whether that be through interviews or videos I watched of small business creators.</p>
+      <article class="slideshow-container">
+        <div class="mySlides">
+          <img src="Images-Tabbit/Betty Lisa User Persona.svg" alt="Persona 1">
+        </div>
+        <div class="mySlides">
+          <img src="Images-Tabbit/Luna Park User Persona.svg" alt="Persona 2">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        </article>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+    </section>
+    <section class="section">
       <h2 class="w"> What's Betty's business life like?</h2>
       <p> With the research gathered, we looked at what Betty’s user journey through a product launch would be like, going through all the stresses she normally does. </p>
       <img src="Images-Tabbit/Journey Map.svg" alt="Betty's Journey Map">
-    </div>
+    </section>
 <!-- Competitive Analysis -->
-    <div class="text-only">
+    <section class="text-only">
       <h3 class="r"> Competitive Analysis </h3>
       <h1> Looking through the tools used most by small business owners.</h1>
       <h2 class="w"> I analyzed 4 competitors, looking at their strengths and weaknesses. I found that most competitors were either too complex or too simple, lacking the balance needed for solo creatives. Many also had poor user interfaces, making them difficult to navigate.</h2>
       <img src="Images-Tabbit/Competitive Analysis.svg" alt="Competitive Analysis">
-    </div>
+    </section>
 <!-- Mockup to be done whatever ig maybe ill kill myself first we'll see!!!!! -->
 <!-- Information Architecture -->
-    <div class="text-only">
+    <section class="text-only">
       <h3 class="r"> Information Architecture </h3>
       <h1> Structuring the app for optimal user experience.</h1>
       <p >Finding what features were crucial was the most important and difficult part because of the number of factors that go into a business. <br> <br>  I needed to pick what features were key to the project because of the time constraints of needing to finish this project before school.</p>
       <img src="Images-Tabbit/Information Architecture.svg" alt="Information Architecture">
-    </div>
+    </section>
 <!-- Wireframes aka later problem  -->
-    <div class="text-only">
+    <section class="text-only">
       <h3 class="r"> Wireframes </h3>
       <h1> Sketching out the app's layout and functionality.</h1>
       <p > I developed low-fidelity wireframes to map out the app's interface and user interactions. This allowed for quick iterations and feedback, ensuring that the design met user needs before moving on to high-fidelity designs.</p>
-    </div>
-
+      <figure>
+        <img src="Images-Tabbit/Wireframes.gif" alt="Wireframes">
+      </figure>
+    </section>
+<!-- Design System -->
+    <header class="text-only"> <h3 class="r"> Design System </h3>
+    <h1>Friendly, welcoming and inclusive.</h1>
+    <p> The main goal of the design system was to create a welcoming brand identity. Accessible to all.</p><br>
+    <a href="https://gabrielparagas.framer.website/" target="_blank" ><p><u>If you want more details, click here to check out the brand designer's portfolio.</u></p>  </a>
+    </header>
+    <figure class="image-caption">
+      <figcaption class="image-caption">
+        <h4 class="caption"> Branding:</h4>
+      </figcaption>
+      <img src="Images-Tabbit/Branding.svg" alt="Branding">
+    </figure>
+    <figure class="image-caption">
+      <figcaption class="image-caption">
+        <h4 class="caption"> Components &amp; Cards:</h4>
+      </figcaption>
+        <img src="Images-Tabbit/Components.svg" alt="Components and Cards">
+    </figure>
+<!-- Solution -->
+      <header class=" center-text">
+        <img src="Images-Tabbit/Line.svg" alt="Blocker">
+    <h3 class="r">Solution</h3>
+      <h1> What is Tabbit? </h1>
+      <h2 class="w">Tabbit is a management platform that creates the most digestible version of important business details. </h2>
+    </header>
   </section>
 
 
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+</script>
 
 <!--Side Bar-->
 <aside class="sidebar">

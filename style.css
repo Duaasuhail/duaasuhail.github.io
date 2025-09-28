@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, p, .caption {
 h1 { 
     font-family: "Aktiv Grotesk", sans-serif;
     color: #FAECDC;
-    font-size: 52px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%; 
@@ -25,7 +25,7 @@ h1 {
 
 h2 { 
     font-family: "Aktiv Grotesk";
-    font-size: 28px; 
+    font-size: 24px; 
     font-weight: 500;
     line-height: normal;
 }
@@ -224,10 +224,12 @@ p {
 }
 
 .nav {
-    position: sticky;
-    top: 1em;  
-    margin-left: 3.5em;
-    margin-right: 3.5em;
+    position: fixed;
+    top: 0; 
+    left: 0; /* Add this */
+    right: 0; /* Add this */
+    z-index: 1000; 
+        padding: 1em 3.5em; 
 }
 .btn {
     display: grid;

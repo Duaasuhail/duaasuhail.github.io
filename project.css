@@ -172,7 +172,7 @@ margin-bottom: 300px;
 }
 
 .prev:hover, .next:hover {
-  background-color: #590D0E;
+  background-color: #F03737;
 }
 
 
@@ -209,4 +209,29 @@ margin-bottom: 300px;
     align-self: stretch;
     /* Make it responsive */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Side Headers */
+#overview{
+    font-family: "Aktiv Grotesk";
+    font-size: 24px; 
+    font-weight: 500;
+    line-height: normal;
+    color:#F03737
+}
+
+#current-problem{
+    font-family: "Aktiv Grotesk";
+    font-size: 24px; 
+    font-weight: 500;
+    line-height: normal;
+    color:#F03737
+}
+
+#problem-statement{
+    font-family: "Aktiv Grotesk";
+    font-size: 24px; 
+    font-weight: 500;
+    line-height: normal;
+    color:#F03737
 }

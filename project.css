@@ -311,181 +311,99 @@ p a:hover {
     display: inline-grid;
 }
 
+    h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700; line-height: 1.2; }
+    h2 { font-size: clamp(1.25rem, 3vw, 1.75rem); font-weight: 600; line-height: 1.3; }
+    h3 { font-size: clamp(1rem, 2.5vw, 1.25rem); font-weight: 600; }
+    h4 { font-size: clamp(0.875rem, 2vw, 1rem); font-weight: 500; }
+    p, li { font-size: clamp(0.875rem, 2vw, 1rem); }
+
+    .w { font-weight: 400; }
+    .r { color: #F03737; }
+    b { font-weight: 700; }
 
 
-
-h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
-h2 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
-h3 { font-size: clamp(1rem, 2.5vw, 1.25rem); }
-h4 { font-size: clamp(0.875rem, 2vw, 1rem); }
-p, li { font-size: clamp(0.875rem, 2vw, 1rem); }
-
-/* Responsive Images */
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
-/* ============================================
-   TABLET: 768px - 1023px
-   ============================================ */
-
-@media (max-width: 1023px) {
-    /* Hide sidebar on tablet */
-    .sidebar {
-        display: none;
-    }
-
-    /* Full width content */
-    .content-wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    /* Project info becomes 2 columns */
-    .project-info {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* Goals grid 2 columns */
-    .goals-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* Features keep 2 columns */
-    .features {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-/* ============================================
-   MOBILE: 0 - 767px
-   ============================================ */
-
-@media (max-width: 767px) {
-    /* Hide sidebar */
-    .sidebar {
-        display: none !important;
-    }
-
-    /* Single column layout */
-    .content-wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    /* Reduce project margins */
-    .project {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
-
-    /* Stack navigation buttons */
-    .btn-group {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-
-    /* Single column project info */
-    .project-info {
-        grid-template-columns: 1fr;
-        padding: 1.5rem;
-    }
-
-    /* Single column goals */
-    .goals-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* Stack problem grid */
-    .problem-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* Stack features vertically */
-    .features {
-        grid-template-columns: 1fr;
-    }
-
-    /* Reduce centered section margins */
-    .h1-centered {
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-    }
-
-    /* Footer stacks */
-    .footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-
-    .footer-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Smaller slideshow controls */
-    .prev, .next {
-        padding: 0.75rem;
-        font-size: 1.2rem;
-    }
-
-    /* Conclusion full width */
-    .conclusion {
-        width: 100%;
-    }
-}
-
-/* ============================================
-   SMALL MOBILE: 0 - 480px
-   ============================================ */
-
-@media (max-width: 480px) {
-    /* Tighter margins */
-    .project {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    /* Smaller padding */
-    .project-info {
-        padding: 1rem;
-    }
-
-    /* Reduce centered margins */
-    .h1-centered {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
-
-    /* Tighter navigation */
-    .nav {
-        padding: 0.75rem 1rem;
-    }
-}
-
-/* 
-   DESKTOP ONLY: 1024px*/
-
+/* DESKTOP: Show sidebar */
 @media (min-width: 1024px) {
-    /* Show sidebar */
     .sidebar {
         display: block;
     }
-
-    .content-wrapper {
-        grid-template-columns: 1fr 200px;
-    }
-
+    
     .problem-grid {
         grid-template-columns: 1.5fr 1fr;
     }
-
+    
     .features:nth-child(even) .image-caption {
         order: 2;
     }
-
     .features:nth-child(even) figure {
         order: 1;
+    }
+}
+@media (min-width: 1400px) {
+    .column-1 img,
+    .column-2 img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    .problem-grid img {
+        max-width: 100%;
+    }
+    
+    .features img {
+        max-width: 100%;
+    }
+    
+    .slideshow-container img {
+        max-width: 100%;
+    }
+}
+
+/* TABLET: Hide sidebar, 2 columns */
+@media (max-width: 1023px) {
+    .sidebar {
+        display: none;
+    }
+    
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .goals-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE: Stack everything */
+@media (max-width: 767px) {
+    .sidebar {
+        display: none !important;
+    }
+    
+    .project-info,
+    .goals-grid,
+    .problem-grid,
+    .features {
+        grid-template-columns: 1fr;
+    }
+    
+    .btn-group,
+    .footer,
+    .footer-wrapper {
+        flex-direction: column;
+    }
+    
+    .conclusion {
+        width: 100%;
     }
 }

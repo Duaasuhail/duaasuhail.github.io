@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, p, .caption {
     h4 { font-size: clamp(0.875rem, 2vw, 1rem); font-weight: 500; }
     p, li { font-size: clamp(0.875rem, 2vw, 1rem); }
 
-    
+
 h1 { 
     font-family: "Aktiv Grotesk", sans-serif;
     color: #FAECDC;
@@ -230,7 +230,7 @@ p {
 
 .nav-wrapper-2 {
     display: grid;
-    gap: 32px;
+    gap: 24px;
 }
 
 .nav {

@@ -1,21 +1,10 @@
 
-
-
-
-
-
-
-
 .text-wrapper{
     display: flex;
     flex-direction: column;
     gap: 1em;
     margin-top: 16px;
 }
-
-
-
-/* dwbiwdiaw */
 
 .content-wrapper {
   display: grid;
@@ -154,7 +143,14 @@
 
 }
 
-
+.statistic-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 32px;
+    align-self: stretch;
+    margin-top: 24vh;
+    margin-bottom: 16px;
+}
 
 .center-container{
     display: flex;
@@ -277,7 +273,6 @@ grid-template-columns: repeat(2, minmax(0, 1fr));
   background-color: #F03737;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;

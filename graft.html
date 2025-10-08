@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Graft</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="project.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="font/stylesheet.css">
+  <script src="script.js"></script>
+<!-- Progress Bar -->
+  <style>
+  .progress-bar {
+      height: 100%;
+      background-color: #1E4B15;
+      width: 0%;
+      transition: width 0.1s ease-out;
+      transform-origin: 0%;
+  }
+  </style>
+  <script>
+    function updateProgressBar() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollPercent = (scrollTop / scrollHeight) * 100;
+      document.getElementById('progressBar').style.width = scrollPercent + '%';
+    }
+    let ticking = false;
+    function onScroll() {
+      if (!ticking) {
+        requestAnimationFrame(updateProgressBar);
+        ticking = true;
+      }
+    }
+    function resetTicking() {
+      ticking = false;
+    }
+    window.addEventListener('scroll', onScroll);
+    window.addEventListener('scroll', resetTicking);
+    updateProgressBar();
+  </script>
+</head>
+
+<body>
+<div class="progress-container">
+  <div class="progress-bar" id="progressBar"></div>
+</div>
+<!-- Navigation -->
+<nav class="nav">
+  <div class="btn-group">
+    <a href="./" class="btn"><h3>Home</h3></a>
+    <a href="wip.html" class="btn"><h3>Play</h3></a>
+    <a href="About.html" class="btn"><h3>About</h3></a>
+  </div>
+</nav>
+<main>
+
+
+<!-- Project Cover -->
+<section class="project">
+  <figure class="center-container">
+    <img src="Images-Graft/Graft Mockup.gif" alt="Mockup 1">
+  </figure>
+      <header class="text-wrapper">
+        <h1>Graft</h1>
+        <h2 class="w">Connecting millennials one plant at a time.</h2>
+    </header>
+<!-- Project Info -->
+<div class="content-wrapper">
+  <div class="main-content">
+    <div class="project-info">
+        <div class="info">
+          <h2 class="w"> Project Type </h2>
+          <ul class="h4-lists">
+            <li>Silly side project</li>
+            <li>B2C</li>
+          </ul>
+        </div>
+        <div class="info">
+          <h2 class="w">  Duration </h2>
+          <h4> 3 Weeks </h4>
+        </div>
+        <div class="info">
+          <h2 class="w">  Contribution </h2>
+          <ul class="h4-lists">
+            <li>Ideation </li>
+            <li>Research</li>
+            <li>Product Design </li>
+            <li>Visual Design</li>
+            <li>Brand Design</li>
+            <li>Design Systems</li>
+            <li>Prototyping</li>
+            <li>User Testing</li>
+          </ul>
+        </div>
+        <div class="info">
+          <h2 class="w">  Tools </h2>
+          <ul class="h4-lists">
+            <li>Figjam </li>
+            <li>Figma</li>
+            <li>Jitter</li>
+          </ul>
+        </div>
+        <div class="info">
+          <h2 class="w">  Team </h2>
+          <article class="h4-lists">
+            <h4>1 Product Designer</h4>
+          </article>
+        </div>
+    </div>
+<section>
+<!-- Overview -->
+  <section id="overview" class="column-1">
+  <h3 class="r"> <b> Overview</b> </h3>
+    <header class="text-wrapper">
+        <h1>Graft is an mobile app that targets Millennials by gamifying gardening and encouraging community.  Providing an accessible and friendly guide with forums and achievements. </h1>
+    </header>
+        <div class="text-wrapper">
+            <h3> Short on Time? </h3>
+            <a  href="#solution" class="btn"><h3>Jump to Final Product</h3></a>
+        </div>
+  </section>
+<!-- Current Problem -->
+  <section class="column-1">
+    <header class="text-only">
+      <h3 class="r" id="current-problem"> Current Problem </h3>
+      <h1>Loneliness and the lost art of hobbies.</h1>
+    </header>
+    <section class="problem-grid">
+      <div>
+        <p>Hobbies are being reframed as another form of productivity or monetization rather than pure enjoyment.  How there is a guilt around spending time doing something for their enjoyment rather than trying to make money constantly. When hobbies are crucial to maintaining healthy mental health.  Which helps create space for creativity, self expression  and relaxation. Combatting loneliness by providing conversation topics and social connection between humans.</p>
+        <figure class="statistic-grid">
+          <img src="Images-Graft/What generations feel lonely.svg" alt="Generations that feel lonely statistics">
+          <img src="Images-Graft/What about hobbies.svg" alt="Hobbies statistics">
+        </figure>
+      </div>
+
+    </section>
+
+  </section>
+<!-- Problem Statement -->
+    <header class="h1-centered">
+        <img src="Images-Tabbit/Line.svg" alt="Blocker">
+        <h3 id="problem-statement" class="r"> Problem Statement </h3>
+        <h1> How might we create a simplistic but intuitive business manager for creatives? That helps artists understand the logistical side of their business.</h1>
+    </header>
+<!-- Goals -->
+    <section class="column-1">
+      <h3 class="r" id="goals"> Goals </h3>
+      <div class="goals-grid">
+        <div class="goals">
+          <h1> 1.</h1>
+          <h2 class="w">Simplify business tasks for creatives using the Law of Prägnanz.</h2>
+        </div>
+        <div class="goals">
+          <h1> 2.</h1>
+          <h2 class="w">Design an all-in-one tool tailored to solo creatives so they feel supported, not overlooked.</h2>
+        </div>
+        <div class="goals">
+          <h1> 3.</h1>
+          <h2 class="w">Allow creatives to focus on their craft!</h2>
+        </div>
+      </div>
+    </section>
+<!-- Research Phase -->
+    <section class="column-1">
+        <h4 class="caption">Research Phase</h4>
+        <h3 class="r" id="background"> Background </h3>
+        <h1>I interviewed 5 young, creative small business owners.</h1>
+        <h2 class="w">Asking the right questions:</h2>
+        <ul class="text-only-list">
+          <li> <h3 class="w"><b>&bull; Walk me through a typical day or week in your creative business.</b></h3></li>
+          <li> <h3 class="w"><b> &bull; What tools or software do you currently use to manage your business operations?</b> </h3></li>
+          <li> <h3 class="w"><b>&bull; What are the biggest challenges you face in managing your business?</b> </h3></li>
+          <li> <h3 class="w"><b>&bull; Are there things you wish you could do more efficiently or professionally?</b></h3></li>
+          <li> <h3 class="w"><b>&bull; If you could design your dream app or assistant to help with your creative business, what would it do? </b></h3></li>
+        </ul>
+        <header class="text-wrapper">
+          <h2 class="w"> What did I find?</h2>
+          <ul>
+            <li><p>&bull; <b>100% struggled</b> with doing their <b>finances properly and on time.</b></p> </li>
+            <li><p>&bull; <b>100% </b>100% want an  <b>easy finance tool</b> (receipts, expenses, taxes). </p></li>
+            <li><p>&bull; 80% Rely on family for tax help (mom/brother). </p></li>
+            <li><p>&bull; <b>60% </b> want better  <b>better order management</b>/organization. </p> </li>
+            <li><p>&bull; 80% Rely on keeping their physical receipts in a box.</p> </li>
+            <li><p>&bull; <b> 100% work on the business alone. </b></p> </li>
+          </ul>
+        </header>
+    </section>
+<!-- Pain Points -->
+    <figure class="center-container">
+      <img src="Images-Tabbit/Painpoints.svg" class="column-1" alt="pain points">
+    </figure>
+<!-- User Research -->
+    <section class="column-2">
+      <h3 class="r" id="user-research"> User Research </h3>
+      <h1> Meet our business owners. </h1>
+      <p> Based on tailoring demographics, user interviews, and online. I created one user persona to empathize with and focus on.  I noticed the trend of lacking time and information among University students, whether that be through interviews or videos I watched of small business creators.</p>
+      <article class="slideshow-container">
+        <div class="mySlides">
+          <img src="Images-Tabbit/Betty Lisa User Persona.svg" alt="Persona 1">
+        </div>
+        <div class="mySlides">
+          <img src="Images-Tabbit/Luna Park User Persona.svg" alt="Persona 2">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </article>
+      <div class="center-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </section>
+<!-- Journey Map -->
+    <section class="column-1">
+      <h2 class="w"> What's Betty's business life like?</h2>
+      <p> With the research gathered, we looked at what Betty's user journey through a product launch would be like, going through all the stresses she normally does. </p>
+      <img src="Images-Tabbit/Journey Map.svg" alt="Betty's Journey Map">
+    </section>
+<!-- Competitive Analysis -->
+    <section class="column-1">
+      <h3 class="r" id="competitive-analysis"> Competitive Analysis </h3>
+      <h1> Looking through the tools used most by small business owners.</h1>
+      <p class="w"> I analyzed 4 competitors, looking at their strengths and weaknesses. I found that most competitors were either too complex or too simple, lacking the balance needed for solo creatives. Many also had poor user interfaces, making them difficult to navigate.</p>
+      <img src="Images-Tabbit/Competitive Analysis.svg" alt="Competitive Analysis">
+    </section>
+<!-- Information Architecture -->
+    <section class="column-1">
+      <header class="header-wrapper">
+      <h3 class="r" id="information-architecture"> Information Architecture </h3>
+      <h1> Structuring the app for optimal user experience.</h1>
+      </header>
+      <p> Finding what features were crucial was the most important and difficult part because of the number of factors that go into a business. <br> <br>  I needed to pick what features were key to the project because of the time constraints of needing to finish this project before school.</p>
+      <img src="Images-Tabbit/Information Architecture.svg" alt="Information Architecture">
+    </section>
+<!-- Wireframes -->
+    <section class="column-1">
+      <h3 class="r" id="wireframes"> Wireframes </h3>
+      <h1> Sketching out the app's layout and functionality.</h1>
+      <p> I developed low-fidelity wireframes to map out the app's interface and user interactions. This allowed for quick iterations and feedback, ensuring that the design met user needs before moving on to high-fidelity designs.</p>
+      <figure>
+        <img src="Images-Tabbit/Wireframes.gif" alt="Wireframes">
+      </figure>
+    </section>
+<!-- Design System -->
+    <section class="column-2">
+    <header class="header-wrapper">
+      <h3 class="r" id="design-system"> Design System </h3>
+      <h1>Friendly, welcoming and inclusive.</h1>
+      <p> The main goal of the design system was to create a welcoming brand identity. Accessible to all.</p>
+      <p><a href="https://gabrielparagas.framer.website/" target="_blank"><u>For this project I collaborated with a brand designer. Check out his portfolio here!</u></a></p>
+    </header>
+      <article class="slideshow-container">
+        <div class="mySlides">
+          <img src="Images-Tabbit/Tabbits Mission.png" alt="Tabbits Mission">
+        </div>
+        <div class="mySlides">
+          <img src="Images-Tabbit/Tabbits Components.png" alt="Tabbits Components">
+        </div>
+        <div class="mySlides">
+          <img src="Images-Tabbit/Tabbits Logo.png" alt="Tabbits Vision">
+        </div>
+        <div class="mySlides">
+          <img src="Images-Tabbit/Tabbits Colours.png" alt="Tabbits Vision">
+        </div>
+        <div class="mySlides">
+          <img src="Images-Tabbit/Tabbits Clear Space.png" alt="Tabbits Vision">
+        </div>
+        <div class="mySlides">
+          <img src="Images-Tabbit/Tabbits Assets.png" alt="Tabbits Vision">
+        </div>
+        <div class="mySlides">
+          <img src="Images-Tabbit/Tabbit Typography.png" alt="Tabbits Vision">
+        </div>
+        <div class="mySlides">
+          <img src="Images-Tabbit/Tabbits Vision.png" alt="Tabbits Vision">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </article>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+      </div>
+    </section>
+<!-- Solution -->
+    <header class="h1-centered">
+        <img src="Images-Tabbit/Line.svg" alt="Blocker">
+        <h3 class="r" id="solution">Solution</h3>
+        <h1> What is Tabbit? </h1>
+        <h2 class="w">Tabbit is a management platform that creates the most digestible version of important business details. </h2>
+    </header>
+    <article class="features-wrapper">
+      <figure class="features" alt="Adding Expense">
+        <figcaption class="image-caption" alt="Adding Expense">
+          <h2 class="w"> Quickly add your business expenses.</h2>
+          <p> Take photos of your receipts, automatically scanning the needed information. Being able to easily track what you buy for your business.</p>
+        </figcaption>
+          <figure>
+            <img src="Images-Tabbit/add expense.gif" alt="Adding Expense">
+          </figure>
+      </figure>
+      <figure class="features" alt="Checking Order">
+        <figcaption class="image-caption">
+          <h2 class="w"> Check Your Orders at the tip of your fingers.</h2>
+          <p> Either connect your storefront account to track orders or manually add orders. Be able to quickly check on them with a simple tap of your finger.</p>
+        </figcaption>
+          <figure>
+            <img src="Images-Tabbit/checking order.gif" alt="Checking Order">
+          </figure>
+      </figure>
+      <figure class="features" alt="Authorize Apps">
+        <figcaption class="image-caption">
+          <h2 class="w">Authorize the apps your business uses to have it all in one place.</h2>
+          <p>Be able to connect apps to have all of your business needs in one app. Minimizing the spread-out business.</p>
+        </figcaption>
+          <figure>
+            <img src="Images-Tabbit/Authorize Apps.gif" alt="authorizing apps">
+          </figure>
+      </figure>
+      <figure class="features" alt="Customizing Dashboard">
+        <figcaption class="image-caption">
+          <h2 class="w">Customize your dashboard with tabs.</h2>
+          <p>Add or remove tabs to customize and ensure you can focus on what you need.</p>
+        </figcaption>
+          <figure>
+            <img src="Images-Tabbit/Adding a new tab.gif" alt="Customizing Dashboard">
+          </figure>
+      </figure>
+      <figure class="features" alt="Supply Stock">
+        <figcaption class="image-caption">
+          <h2 class="w"><b>Keep track of supplies in stock.</b></h2>
+          <p>List all your supplies and set a reminder when they're low in stock. With Indicators to remind you to buy more.</p>
+        </figcaption>
+          <figure>
+            <img src="Images-Tabbit/Checking Supply Stock.gif" alt="Supply Stock">
+          </figure>
+      </figure>
+      <a  href="https://www.figma.com/proto/4maDvJIRImNgqdSjhGUbrc/Tabbit?page-id=293%3A282&node-id=293-464&p=f&m=dev&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=481%3A1302&show-proto-sidebar=1&t=s4yWNyLDJGTTWlbj-1" class="btn" target="_blank"><h3>Prototype Link</h3></a>
+     </article>
+<!-- What I learned -->
+    <section class="conclusion">
+    <article class="text-wrapper">
+        <h4 class="caption">Conclusion</h4>
+        <h3 class="r" id="what-i-learned"> What I Learned </h3>
+      <div class="text-wrapper">
+        <article class="text-wrapper">
+          <h1>Less is More.</h1>
+          <p> Being able to apply the Law of Prägnanz and ensure I had all the necessary information was both time-consuming and very rewarding. Being able to capture everything important while keeping the design clear and intuitive. </p>
+        </article>
+        <article class="text-wrapper">
+          <h1>Complicated Problems can have simple solutions.</h1>
+          <p>The complexity of an issue doesn’t intimidate me. Regardless of how complicated business management can be, there is still a simple and efficient solution available. You just have to think and put in the time and effort to research, ideate, and create.</p>
+        </article>
+
+        <article class="text-wrapper">
+          <h1>Research, Research, and more Research.</h1>
+          <p>The amount of hours that were put into researching businesses and how to manage on, as well as who was managing businesses. Even after the initial research stage, the research never stopped. Especially when it came to learning about how taxes work and how expenses play that part. Revealing more pain points and complications when it came to business management.</p>
+        </article>
+       </div>
+    </article>
+
+<!--Next Steps-->
+    <article >
+      <header>
+        <h3 class="r" id="next-steps"> Next Steps </h3>
+      </header>
+      <div class="text-wrapper">
+        <article class="text-wrapper">
+          <h1>Experiment with AI to create a mini assistant.</h1>
+          <p>My research showcased that typically, creatives are against AI usage, so for this project, I avoided incorporating it. But creating a sister app with integrated AI to speed up the process and solve problems I didn’t this time around (the social media burnout issues). Creating simple schedules and timetables for social media posting.</p>
+        </article>
+        <article class="text-wrapper">
+          <h1>Expand to desktop.</h1>
+          <p>Creating a separate web app that connects the mobile app to their laptops.</p>
+        </article>
+        <article class="text-wrapper">
+          <h1>Create a collaborative platform.</h1>
+          <p>Being able to expand and add features to create a collaborative app where multiple people run one business.</p>
+        </article>
+       </div>
+    </article>
+    <article >
+    <a  href="https://www.figma.com/proto/4maDvJIRImNgqdSjhGUbrc/Tabbit?page-id=293%3A282&node-id=293-464&p=f&m=dev&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=481%3A1302&show-proto-sidebar=1&t=s4yWNyLDJGTTWlbj-1" class="btn" target="_blank"><h3>Check Out Graft!</h3></a>
+     </article>
+  </section>
+
+</section>
+
+  </div>
+
+
+<!--Side Bar-->
+  <aside class="sidebar">
+    <div class="sidebar-content">
+        <h4><a href="#overview">Overview</a></h4>
+        <h4><a href="#current-problem">Current Problem</a></h4>
+        <h4><a href="#problem-statement">Problem Statement</a></h4>
+        <h4><a href="#goals">Goals</a></h4>
+        <h4><a href="#background">Background</a></h4>
+        <h4><a href="#user-research">User Research</a></h4>
+        <h4><a href="#competitive-analysis">Competitive Analysis</a></h4>
+        <h4><a href="#information-architecture">Information Architecture</a></h4>
+        <h4><a href="#wireframes">Wireframes</a></h4>
+        <h4><a href="#design-system">Design System</a></h4>
+        <h4><a href="#solution">Solution</a></h4>
+        <h4><a href="#what-i-learned">What I Learned</a></h4>
+        <h4><a href="#next-steps">Next Steps</a></h4>
+    </div>
+  </aside>
+
+</div>
+
+<script src="project-script.js"></script>
+<footer class="footer">
+      <h3 class="w">Designed and Coded with a LOT of coffee</h3>
+      <div class="footer-wrapper">
+        <h3 class="w"><a href="https://www.linkedin.com/in/duaasuhail/" target="_blank" > Linkedin </a></h3>
+        <h3 class="w"><a href="mailto:duaas2005@gmail.com?subject=Hey%20Duaa" target="_blank" > Email </a></h3>
+        <h3 class="w"><a href="https://drive.google.com/file/d/14akBgPoEL__C2kBWJ-GbHTvHdhGgOrAJ/view?usp=sharing" target="_blank" > Resume </a></h3>
+      </div>
+</footer>
+</section>
+
+</main>
+</body>
+</html>

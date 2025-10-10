@@ -489,6 +489,11 @@ img {
     .project-info {
         flex-direction: column;
         gap: 1.5rem;
+        justify-content: flex-start;
+    }
+    
+    .project-info .info {
+        width: 100%;
     }
     
     /* Adjust gaps for mobile */
@@ -530,10 +535,20 @@ img {
     }
     
     /* Flex direction changes */
-    .btn-group,
-    .footer,
-    .footer-wrapper {
+    .btn-group {
         flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .footer-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 1rem;
     }
     
@@ -587,8 +602,8 @@ img {
     }
     
     .prev, .next {
-        padding: 12px;
-        font-size: 16px;
+        padding: 8px;
+        font-size: 14px;
     }
     
     .dot {

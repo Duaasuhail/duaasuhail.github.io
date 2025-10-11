@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, p, .caption {
     padding: 0;
 }
 
+
 /* Base Typography - Matched with Document 1 */
 h1 {
     font-family: "Aktiv Grotesk", sans-serif;
@@ -398,3 +399,13 @@ li {
     background-color: #191717;
     z-index: 99;
 }
+
+.projects{
+    display: flex;
+    padding: 8px;
+}
+
+.projects:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+        }

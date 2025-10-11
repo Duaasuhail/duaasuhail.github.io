@@ -418,8 +418,8 @@ img {
 /* Small desktop: 1400px - 1899px */
 @media (min-width: 1400px) and (max-width: 1899px) {
     .project {
-        padding-left: 12vw;
-        padding-right: 12vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
     }
 
     .column-1 img,

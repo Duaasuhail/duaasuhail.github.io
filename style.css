@@ -444,24 +444,75 @@ li {
 }
 
 
+
+
 .projects {
   display: flex;
   padding: 12px;
   border: none;
   position: relative;
   transition: background 0.7s ease-in;
+  overflow: hidden;
 }
 
 
+/*stars*/
+        .projects::before,
+        .projects::after {
+            content: "✦";
+            color: #FAECDC;
+            position: absolute;
+            font-size: 20px;
+            opacity: 0;
+            pointer-events: none;
+            display: none; 
+        }
 
-.my-element {
-  background-color: blue;
-  transition: all 0.3s ease;
-}
+        .projects::before {
+            top: 25%;
+            left: 20%;
+        }
 
-.my-element:hover {
-  background-color: red;
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
+        .projects::after {
+            bottom: 20%;
+            right: 30%;
+        }
 
+        .star {
+            position: absolute;
+            color: #FAECDC;
+            opacity: 0;
+            pointer-events: none;
+            display: none;
+        }
+
+        .star-1 { top: 15%; right: 30%; font-size: 24px; }
+        .star-2 { bottom: 35%; left: 25%; font-size: 20px; }
+
+        .projects:hover::before,
+        .projects:hover::after,
+        .projects:hover .star {
+            display: block;
+        }
+
+        .projects:hover::before {
+            animation: shimmer 1.5s infinite;
+        }
+
+        .projects:hover::after {
+            animation: shimmer 1.5s infinite 0.5s;
+        }
+
+        .projects:hover .star-1 { animation: shimmer 1.5s infinite 0.2s; }
+        .projects:hover .star-2 { animation: shimmer 1.5s infinite 0.4s; }
+
+        @keyframes shimmer {
+            0%, 100% {
+                opacity: 0;
+                transform: scale(0.3) rotate(0deg);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1) rotate(90deg);
+            }
+        }

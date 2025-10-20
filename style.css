@@ -407,7 +407,7 @@ li {
 
 .btn2:hover {
   border-color: #F03737;
-  background: rgb(31, 6, 6);
+  background: #1f0606;
 }
 
 
@@ -488,6 +488,7 @@ li {
 
         .star-1 { top: 15%; right: 30%; font-size: 24px; }
         .star-2 { bottom: 35%; left: 25%; font-size: 20px; }
+        .star-3 { bottom: 60%; left: 25%; font-size: 20px; }
 
         .projects:hover::before,
         .projects:hover::after,
@@ -505,6 +506,12 @@ li {
 
         .projects:hover .star-1 { animation: shimmer 1.5s infinite 0.2s; }
         .projects:hover .star-2 { animation: shimmer 1.5s infinite 0.4s; }
+        .projects:hover .star-3 { animation: shimmer 1.5s infinite 0.6s; }
+        .projects:hover .star-4 { animation: shimmer 1.5s infinite 0.6s; }
+
+        .projects:hover {
+  box-shadow: 0 8px 16px #0c0a0a;
+        }
 
         @keyframes shimmer {
             0%, 100% {

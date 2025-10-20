@@ -454,3 +454,14 @@ li {
 
 
 
+.my-element {
+  background-color: blue;
+  transition: all 0.3s ease;
+}
+
+.my-element:hover {
+  background-color: red;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+

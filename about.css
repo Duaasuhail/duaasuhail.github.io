@@ -1,7 +1,7 @@
 .h1-hook {
     font-size: 2rem;
     display: flex;
-    margin-top: 55vh;
+    margin-top: 40vh;
     padding-top: 2%;
     padding-bottom: 2%;
 }
@@ -21,7 +21,7 @@
 .big {
     font-family: "Aktiv Grotesk", sans-serif;
     color: #FAECDC;
-    font-size: 56px;
+    font-size: 58px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.2;

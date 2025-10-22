@@ -158,9 +158,9 @@
 }
 
 p { 
-      max-width: min(90vw, 850px); 
-  margin: 0 auto;
-  padding: 0 3rem;
+    max-width: min(90vw, 850px); 
+    margin: 0 auto;
+    padding: 0 3rem;
 }
 .project-info {
     display: flex;
@@ -204,7 +204,7 @@ p {
 .statistic-grid {
     display: flex;
     flex-direction: row;
-    height: 60%;
+    height: 35vh;
     gap: 32px;
     margin-top: 12vh;
 }

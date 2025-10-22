@@ -157,6 +157,11 @@
     color: #F03737 !important;
 }
 
+p { 
+      max-width: min(90vw, 850px); 
+  margin: 0 auto;
+  padding: 0 3rem;
+}
 .project-info {
     display: flex;
     flex-direction: row;
@@ -199,7 +204,7 @@
 .statistic-grid {
     display: flex;
     flex-direction: row;
-    width: 75%;
+    height: 60%;
     gap: 32px;
     margin-top: 12vh;
 }

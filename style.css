@@ -14,12 +14,7 @@ h1, h2, h3, h4, h5, p, .caption {
     padding: 0;
 }
 
-.nav-column img {
-    width: 100%;
-    max-width: 28vw;
-    height: auto;
-    display: block;
-}
+
 /* Base Typography - Matched with Document 1 */
 h1 {
     font-family: "Aktiv Grotesk", sans-serif;

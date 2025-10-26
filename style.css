@@ -98,6 +98,20 @@ li {
 
 /* Desktop */
 @media (hover: hover) and (pointer: fine) and (min-width: 769px) {
+    .nav-column {
+        position: fixed;
+        top: 8vh;             
+        left: 0;   
+        margin-left: 2.917vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        max-width: 655px;
+        max-height: 95vh;      
+        overflow-y: auto;      
+    }
+    
     .content {
         display: flex;
         flex-direction: column;
@@ -109,19 +123,6 @@ li {
         padding-bottom: 2%;
         padding-left: 3%;
         gap: 56px; 
-    }
-
-    .nav-column {
-        position: fixed;
-        bottom: 0;              
-        left: 0;   
-        margin-left: 2.917vw;
-        margin-bottom: 2.5vh;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: space-between;
-        max-width: 655px;
     }
 }
 

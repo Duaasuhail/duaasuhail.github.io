@@ -87,6 +87,13 @@ li {
     line-height: 1.6;
 }
 
+
+.nav-column img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 @media (hover: hover) {
   p a:link, h3 a:link, h2 > a, li a:link {
     text-decoration-color: #E63223;
@@ -95,7 +102,9 @@ li {
   }
 }
 
-/* Large Desktop: 1900px+ */
+
+
+/* Large Desktop */
 @media (min-width: 1900px) {
     .nav-column {
         position: fixed;

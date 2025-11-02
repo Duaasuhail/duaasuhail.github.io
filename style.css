@@ -578,10 +578,10 @@ li {
             display: none;
         }
 
-        .star-1 { top: 15%; right: 30%; font-size: 24px; }
-        .star-2 { bottom: 35%; left: 25%; font-size: 20px; }
-        .star-3 { bottom: 60%; left: 25%; font-size: 20px; }
-
+        .star-1 { top: 25%; right: 25%; font-size: 24px; }
+        .star-2 { bottom: 35%; left: 25%; font-size: 24px; }
+        .star-3 { top: 0%; left: 32%; font-size: 24px; }
+        .star-4 { top: 5%; right: 030%; font-size: 24px; }
         .projects:hover::before,
         .projects:hover::after,
         .projects:hover .star {

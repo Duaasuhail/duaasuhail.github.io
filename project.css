@@ -694,3 +694,9 @@ img {
         gap: 20px;
     }
 }
+
+.responsive {
+  width: 100%;
+  max-width: 40vw;
+  height: auto;
+}

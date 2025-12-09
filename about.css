@@ -6,10 +6,7 @@
     padding-bottom: 2%;
 }
 
-.about-wrapper {
-    padding-left: 4vw;
-    padding-right: 4vw;
-}
+
 
 .two-col-grid {
     display: grid;
@@ -20,7 +17,7 @@
 
 .big {
     font-family: "Aktiv Grotesk", sans-serif;
-    color: #FAECDC;
+    color: #1C0706;
     font-size: 58px;
     font-style: normal;
     font-weight: 700;

@@ -144,27 +144,9 @@
     margin-bottom: 10vh;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.footer-wrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    margin-bottom: 2vh;
-}
 
-.footer-wrapper a {
-    color: #EFE7D4 !important;
-    text-decoration: none;
-}
 
-.footer-wrapper a:hover {
-    color: #86170E !important;
-}
 
 p { 
     max-width: min(90vw, 850px); 

@@ -4,7 +4,7 @@ html {
 
 body {
     font-size: 16px;
-    background-color: #f3eee2 ; 
+    background-color: #f6f6fa ; 
     margin-left: 3.889vw;
     margin-right: 3.889vw;
     margin-bottom: 4vh;
@@ -392,7 +392,7 @@ li {
   display: grid;
   min-width: 116px;
   padding: 18px 16px;
-  background-color: #f3eee2;
+  background-color: #f6f6fa;
   border: 1px solid #340404;
 
   justify-content: center;

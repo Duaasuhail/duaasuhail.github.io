@@ -1,44 +1,41 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const sections = document.querySelectorAll('[id]');
     const navLinks = document.querySelectorAll('.sidebar-content a');
-    
-    console.log('Found elements with IDs:', sections.length);
-    console.log('Found nav links:', navLinks.length);
-    
-    sections.forEach(section => {
-        console.log('Found ID:', section.getAttribute('id'));
-    });
-    
+
+    // Derive section order from sidebar links so both Tabbit and Graft work.
+    // Range-based highlighting: Solution stays active for the full block (including #solution, features, iframe).
+    const sectionIds = Array.from(navLinks)
+        .map(a => a.getAttribute('href'))
+        .filter(href => href && href.startsWith('#'))
+        .map(href => href.slice(1));
+
     function highlightActiveSection() {
         const scrollPos = window.pageYOffset || window.scrollY;
-        const windowHeight = window.innerHeight;
-        
-        let currentSection = '';
-        let closestDistance = Infinity;
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionId = section.getAttribute('id');
-            
-            const distanceFromTop = Math.abs(scrollPos - sectionTop + 150);            
-            if (distanceFromTop < closestDistance && scrollPos >= sectionTop - 300) {
-                closestDistance = distanceFromTop;
-                currentSection = sectionId;
+        let currentSection = sectionIds[0];
+
+        for (let i = 0; i < sectionIds.length; i++) {
+            const el = document.getElementById(sectionIds[i]);
+            if (!el) continue;
+            const sectionTop = el.offsetTop;
+            const nextId = sectionIds[i + 1];
+            const sectionBottom = nextId
+                ? (document.getElementById(nextId)?.offsetTop ?? Infinity)
+                : Infinity;
+
+            if (scrollPos >= sectionTop - 100 && scrollPos < sectionBottom) {
+                currentSection = sectionIds[i];
+                break;
             }
-        });
-        
-        console.log('Active Section:', currentSection);
-        
+        }
+
         navLinks.forEach(link => {
             link.classList.remove('active');
             const href = link.getAttribute('href');
             if (href === `#${currentSection}`) {
                 link.classList.add('active');
-                console.log('✓ Activated link:', href);
             }
         });
     }
-    
+
     window.addEventListener('scroll', highlightActiveSection);
     highlightActiveSection();
 

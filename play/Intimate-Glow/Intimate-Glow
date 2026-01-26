@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Graft</title>
+  <link rel="icon" type="image/x-icon" href="Image-favicon/Crystal Star.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="project.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="font/stylesheet.css">
+  <script src="script.js"></script>
+<!-- Progress Bar -->
+  <style>
+  .progress-bar {
+      height: 100%;
+      background-color: #1E4B15;
+      width: 0%;
+      transition: width 0.1s ease-out;
+      transform-origin: 0%;
+  }
+  </style>
+  <script>
+    function updateProgressBar() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollPercent = (scrollTop / scrollHeight) * 100;
+      document.getElementById('progressBar').style.width = scrollPercent + '%';
+    }
+    let ticking = false;
+    function onScroll() {
+      if (!ticking) {
+        requestAnimationFrame(updateProgressBar);
+        ticking = true;
+      }
+    }
+    function resetTicking() {
+      ticking = false;
+    }
+    window.addEventListener('scroll', onScroll);
+    window.addEventListener('scroll', resetTicking);
+    updateProgressBar();
+  </script>
+</head>
+
+<body>
+<div class="progress-container">
+  <div class="progress-bar" id="progressBar"></div>
+</div>
+<!-- Navigation -->
+<nav class="nav">
+  <div>
+    <a href="./"><h4 class="navigation">Duaa Suhail ☆</h4></a>
+  </div>
+  <div>
+    <a href="./"><h4 class="navigation">Works</h4></a>
+    <a href="wip.html" ><h4 class="navigation">Side Quests</h4></a>
+    <a href="about.html" ><h4 class="navigation">About</h4></a>
+    <a href="https://drive.google.com/file/d/1z0uvXwNvk-lOyiGUFHNGc7AWtiB1F2lt/view?usp=sharing" target="_blank" ><h4 class="navigation">Resume</h4></a>
+  </div>
+</nav>
+<main>
+
+  <figure class="center-container">
+    <img src="Images-Graft/Graft Cover.gif" alt="Mockup 1">
+  </figure>
+<!-- Project Cover -->
+<section class="project">
+
+      <header class="text-wrapper" style="padding-top:2vh;padding-bottom: 2vh;">
+        <h1>Graft</h1>
+        <h2 class="w">Connecting millennials one plant at a time.</h2>
+    </header>
+<!-- Project Info -->
+<div class="content-wrapper">
+  <div class="main-content">
+    <div class="project-info">
+        <div class="info">
+          <h3 class="w"> Project Type </h3>
+          <ul>
+            <li><p>Silly Side Project</p> </li>
+            <li><p>B2C</p></li>
+          </ul>
+        </div>
+        <div class="info">
+          <h3 class="w">  Duration </h3>
+          <p> 3 Weeks </p>
+        </div>
+        <div class="info">
+          <h3 class="w">  Contribution </h3>
+          <ul>
+            <li><p>Ideation</p> </li>
+            <li><p>Research</p></li>
+            <li><p>Product Design</p> </li>
+            <li><p>Visual Design</p></li>
+            <li><p>Brand Design</p></li>
+            <li><p>Design Systems</p></li>
+            <li><p>Prototyping</p></li>
+            <li><p>User Testing</p></li>
+          </ul>
+        </div>
+        <div class="info">
+          <h3 class="w">  Tools </h3>
+          <ul>
+            <li><p>Figjam</p> </li>
+            <li><p>Figma</p></li>
+          </ul>
+        </div>
+        <div class="info">
+          <h3 class="w">  Team </h3>
+          <div>
+            <p>1 Product Designer (me!)</p>
+          </div>
+        </div>
+    </div>
+<section>
+<!-- Overview -->
+  <section id="overview" class="column-1">
+    <header class="text-wrapper">
+      <h3 class="r">Project Overview </h3>
+      <h1>The Problem: Loneliness and the Lost Art of Hobbies.</h1>
+    </header>
+
+
+<script src="project-script.js"></script>
+<!--Footer-->
+    <footer class="footer">
+      <h4 class="navigation">Designed and Coded with a LOT of coffee</h4>
+      <div class="footer-wrapper">
+        <a href="https://www.linkedin.com/in/duaasuhail/" target="_blank" ><h4 class="navigation"> Linkedin </h4></a>
+        <a href="mailto:duaas2005@gmail.com?subject=Hey%20Duaa" target="_blank" ><h4 class="navigation"> Email </h4></a>
+        <a href="https://drive.google.com/file/d/1z0uvXwNvk-lOyiGUFHNGc7AWtiB1F2lt/view?usp=sharing" target="_blank" ><h4 class="navigation">Resume</h4></a>
+      </div>
+    </footer>
+</section>

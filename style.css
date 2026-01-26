@@ -500,14 +500,8 @@ li {
     flex-direction: row;
     gap: 24px;
 }
+/* trying to fix ts */
 
-.footer-wrapper a {
-    text-decoration: underline;
-}
-
-.footer-wrapper a:hover {
-    color: #86170E !important;
-}
 
 
 /* Make images responsive */

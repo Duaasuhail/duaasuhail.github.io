@@ -501,13 +501,7 @@ li {
     gap: 24px;
 }
 
-.footer-wrapper a {
-    text-decoration: underline;
-}
 
-.footer-wrapper a:hover {
-    color: #86170E !important;
-}
 
 
 /* Make images responsive */

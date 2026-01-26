@@ -497,16 +497,17 @@ li {
 .image-button {
     display: inline-block;
     cursor: pointer;
-    transition: opacity 0.3s ease;
-}
-
-.image-button:hover {
-    opacity: 0.8;
 }
 
 .image-button img {
     display: block;
     max-width: 100%;
+    transform-origin: center;
+    transition: transform 220ms ease;
+}
+
+.image-button:hover img {
+    transform: scale(1.02);
 }
 
 .progress-container {
@@ -558,13 +559,13 @@ li {
         }
 
         .projects::before {
-            top: 25%;
-            left: 20%;
+            top: 28%;
+            left: 16%;
         }
 
         .projects::after {
-            bottom: 20%;
-            right: 30%;
+            bottom: 24%;
+            right: 18%;
         }
 
         .star {
@@ -576,10 +577,13 @@ li {
             z-index: 10;
         }
 
-        .star-1 { top: 0%; right: 25%; font-size: 24px; }
-        .star-2 { bottom: 35%; left: 25%; font-size: 24px; }
-        .star-3 { top: 0%; left: 32%; font-size: 24px; }
-        .star-4 { top: 5%; right: 030%; font-size: 24px; }
+        .star-1 { top: 12%; right: 16%; font-size: 24px; }
+        .star-2 { bottom: 28%; left: 16%; font-size: 24px; }
+        .star-3 { top: 14%; left: 18%; font-size: 24px; }
+        .star-4 { top: 18%; right: 22%; font-size: 24px; }
+        .star-5 { bottom: 16%; right: 14%; font-size: 22px; }
+        .star-6 { top: 44%; left: 10%; font-size: 20px; }
+        .star-7 { bottom: 42%; right: 10%; font-size: 22px; }
         .projects:hover::before,
         .projects:hover::after,
         .projects:hover .star {
@@ -597,7 +601,10 @@ li {
         .projects:hover .star-1 { animation: shimmer 1.5s infinite 0.2s; }
         .projects:hover .star-2 { animation: shimmer 1.5s infinite 0.4s; }
         .projects:hover .star-3 { animation: shimmer 1.5s infinite 0.6s; }
-        .projects:hover .star-4 { animation: shimmer 1.5s infinite 0.6s; }
+        .projects:hover .star-4 { animation: shimmer 1.5s infinite 0.7s; }
+        .projects:hover .star-5 { animation: shimmer 1.5s infinite 0.9s; }
+        .projects:hover .star-6 { animation: shimmer 1.5s infinite 1.1s; }
+        .projects:hover .star-7 { animation: shimmer 1.5s infinite 1.25s; }
 
 
         @keyframes shimmer {

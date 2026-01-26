@@ -238,7 +238,7 @@ p {
 /* Sidebar */
 .sidebar {
     position: sticky;
-    top: 20px;
+    top: 60px;
     z-index: 1001;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -421,8 +421,8 @@ img {
 /* Small desktop: 1400px - 1899px */
 @media (min-width: 1400px) and (max-width: 1899px) {
     .project {
-        padding-left: 0vw;
-        padding-right: 0vw;
+        padding-left: 8vw;
+        padding-right: 8vw;
     }
 
     .column-1 img,

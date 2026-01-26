@@ -7,8 +7,6 @@ body {
     background-color: #f4f4f5 ; 
     margin-left: 3.889vw;
     margin-right: 3.889vw;
-    margin-bottom: 4vh;
-    margin-top: 11vh;
 }
 
 h1, h2, h3, h4, h5, p, .caption {
@@ -86,6 +84,14 @@ h4.tags {
     font-size: clamp(0.75rem, 1.75vw, 0.875rem);
 }
 
+h4.navigation {
+    color: #1C0706 ;
+    opacity: 70%;
+    font-weight: 500;
+    font-size: clamp(0.85rem, 1.75vw, 0.875rem);
+}
+
+
 p a:hover, h3 a:hover, h2 a:hover, li a:hover {
   text-decoration-color: #1C0706;
   color: #961309;
@@ -122,7 +128,12 @@ li {
     margin: 0 auto;
 }
 
-
+    .hero-header {
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        margin-top: 4vh;   
+    }
 
 
 /* Large Desktop */
@@ -378,15 +389,24 @@ li {
 
 
 .nav {
-    position: fixed;
-    top: 0; 
-    left: 0;
-    right: 0; 
-    z-index: 1000; 
-    margin-left: 3.889vw;
-    margin-right: 3.889vw;
-    margin-top: 2.5vh;
+    position: sticky;
+    background: #f4f4f5 ;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c2c2c4;
+    padding: 16px 0;
 }
+
+.nav > div {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+
+
 
 .btn {
   display: grid;
@@ -468,18 +488,21 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 2.5vh;
+    border-top: 1px solid #c2c2c4;
+    padding-bottom: 2.5vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
 }
 
 .footer-wrapper {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    margin-bottom: 2vh;
 }
 
 .footer-wrapper a {
-    color: #360410 !important;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .footer-wrapper a:hover {
@@ -507,7 +530,7 @@ li {
 }
 
 .image-button:hover img {
-    transform: scale(1.02);
+    transform: scale(0.98);
 }
 
 .progress-container {
@@ -517,7 +540,7 @@ li {
     width: 100vw;
     height: 1vh;
     background-color: #f3eee2;
-    z-index: 99;
+    z-index: 101;
 }
 
 

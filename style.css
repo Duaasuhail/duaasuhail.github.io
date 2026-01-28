@@ -394,6 +394,7 @@ li {
     position: sticky;
     background: #f4f4f5 ;
     top: 0;
+    width:100%;
     z-index: 100;
     display: flex;
     justify-content: space-between;
@@ -495,6 +496,7 @@ li {
     padding-bottom: 2.5vh;
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
+    width:100%;
 }
 
 .footer-wrapper {

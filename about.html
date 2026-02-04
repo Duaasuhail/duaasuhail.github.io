@@ -39,10 +39,11 @@
         <p>I’m a third-year student at York University’s Design program. Growing up I have always been a creative I’ve been illustrating and drawing for over two decades. With a passion for problem solving I realized product design was for me very quickly with a side of coding  of course ;).<br><br><br><br> <b>My goal? </b>Communicate effectively and solve problems through creativity, innovation, and continuous learning especially in design and coding.</p>
       </header>
       <br><br>
-
     </article>
-      <figure>
-        <img src="Images-About/HEADSHOT.png" alt="headshot"  style="text-align: center; display: flex; align-items: center; justify-items: center; margin: 0 auto;margin-bottom:40px;">
+      <figure class="headshot">
+        <img id="myImage" src="Images-About/HEADSHOT.png" alt="headshot"  >
+        <h4 class="caption">Click to see my other headshots!</h4>
+
       </figure>
   </section>
   <section style="margin-top:8vh;margin-bottom:4vh;"> 
@@ -62,8 +63,6 @@
         <h3>Community is always the foundation. </h3>
         <p>Going through design school teaches you one big lesson. <br> Critique from those around you is the most important part of the process. It's how we learn and grow as designers.</p>
       </div>
-
-
     </article>
   </section>
   <section>
@@ -87,6 +86,23 @@
       </div>
     </footer>
 </main>
+
+
+  <script>
+    const images = [
+      'Images-About/HEADSHOT.png',
+      'Images-About/HEADSHOT-PAPERMARIO.png',
+      'Images-About/HEADSHOT-MII.png',
+    ];
+    
+    let currentIndex = 0;
+    const img = document.getElementById('myImage');
+    
+    img.addEventListener('click', function() {
+      currentIndex = (currentIndex + 1) % images.length;
+      img.src = images[currentIndex];
+    });
+  </script>
 </body>
 </html>
 

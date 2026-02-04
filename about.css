@@ -17,6 +17,27 @@
     justify-content:flex-end;
     position: sticky;
 }
+
+.headshot{
+    display: flex;
+    flex-direction: column;
+    text-align:left; 
+    justify-items: center; 
+    margin: 0 auto;
+    margin-bottom:40px;
+    padding: 0 20px;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.headshot:hover img {
+    display: block;
+    transform: scale(1.01);
+    transform-origin: bottom;
+    transition: transform 220ms ease;
+
+}
+
 /* Mobile: up to 767px */
 @media (max-width: 767px) {
 

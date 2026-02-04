@@ -42,7 +42,7 @@
     </article>
       <figure class="headshot">
         <img id="myImage" src="Images-About/HEADSHOT.png" alt="headshot"  >
-        <h4 class="caption">Click to see my other headshot!</h4>
+        <h4 class="caption">Click to see my other headshots!</h4>
 
       </figure>
   </section>
@@ -89,16 +89,18 @@
 
 
   <script>
+    const images = [
+      'Images-About/HEADSHOT.png',
+      'Images-About/HEADSHOT-PAPERMARIO.png',
+      'Images-About/HEADSHOT-MII.png',
+    ];
+    
+    let currentIndex = 0;
     const img = document.getElementById('myImage');
-    let isFirstImage = true;
     
     img.addEventListener('click', function() {
-      if (isFirstImage) {
-        img.src = 'Images-About/HEADSHOT.png';
-      } else {
-        img.src = 'Images-About/HEADSHOT-MII.png';
-      }
-      isFirstImage = !isFirstImage;
+      currentIndex = (currentIndex + 1) % images.length;
+      img.src = images[currentIndex];
     });
   </script>
 </body>

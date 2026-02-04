@@ -87,8 +87,8 @@ h4.tags {
 }
 
 h4.navigation {
-    color: #1C0706 ;
-    opacity: 64%;
+    color: #433433 ;
+    opacity: 100%;
     font-weight: 400;
     font-size: clamp(0.475rem, 1vw, 0.875rem);
 }
@@ -104,8 +104,8 @@ p {
 
 
 
-p a:hover, h3 a:hover, h2 a:hover, li a:hover {
-  color: #961309;
+p a:hover, h3 a:hover, h2 a:hover, li a:hover, h4 a:hover {
+  color: #b11509;
 }
 
 .text-content {

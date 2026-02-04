@@ -342,17 +342,11 @@ p {
 }
 
 /* Links */
-.h4-lists a:hover h4 {
-    color: #961309;
-}
 
-a:hover {
-    color: #961309;
-}
 
-p a:hover {
-    color: #961309 !important;
-}
+
+
+
 
 .conclusion article > a.btn {
     width: fit-content;

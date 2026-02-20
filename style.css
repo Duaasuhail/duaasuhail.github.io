@@ -4,7 +4,7 @@ html {
 
 body {
     font-size: 16px;
-    background-color: #f5f5f7 ; 
+    background-color: #FAFAFA ; 
     margin-left: 3.889vw;
     margin-right: 3.889vw;
 }
@@ -393,7 +393,7 @@ p a:hover, h3 a:hover, h2 a:hover, li a:hover, h4 a:hover {
 
 .nav {
     position: sticky;
-    background: #f5f5f7 ;
+    background: #FAFAFA ;
     top: 0;
     width:100%;
     z-index: 100;
